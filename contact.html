@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Modern Windows &amp; Doors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2A64F2",
+              "secondary": "#6DD699",
+              "background-light": "#FFFFFF",
+              "background-dark": "#101922",
+              "text-light": "#333333",
+              "text-dark": "#F0F2F5",
+              "text-secondary-light": "#757575",
+              "text-secondary-dark": "#A8B4C2"
+            },
+            fontFamily: {
+              "display": ["Poppins", "sans-serif"],
+              "body": ["Open Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+            boxShadow: {
+                'soft': '0 4px 12px rgba(0, 0, 0, 0.05)',
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-soft">
+<div class="container mx-auto px-6">
+<div class="flex items-center justify-between whitespace-nowrap h-20">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">select_window</span>
+<h2 class="text-text-light dark:text-text-dark text-xl font-display font-bold tracking-tight">Modern Windows</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-text-light dark:text-text-dark text-sm font-semibold font-display" href="#">Home</a>
+<a class="text-text-light dark:text-text-dark text-sm font-semibold font-display" href="services.html">Products</a>
+<a class="text-text-light dark:text-text-dark text-sm font-semibold font-display" href="#">Gallery</a>
+<a class="text-text-light dark:text-text-dark text-sm font-semibold font-display" href="about.html">About Us</a>
+<a class="text-primary text-sm font-semibold font-display" href="#">Contact</a>
+</nav>
+<button class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold font-display leading-normal tracking-wide hover:opacity-90 transition-opacity">
+<span class="truncate">Request a Quote</span>
+</button>
+<button class="md:hidden flex items-center justify-center p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<div class="relative h-80">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Interior view of a modern living room with large, clean windows showing a green garden outside." style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDiD9P6V88OUmLU7290iR_zpCas2HdhwgPUBCwl2LXT7j64no6-ff9-7vddeuJ35S9n2trdasev9DjzmlN9ZGndiAEwg87lmT-mBxFtbdWzuOlv0EIhthRIfoLXfm0UehaUFsiIEqV4PKpDCfVsnrjRtrp9psbr4Kal5WeuhvfO4H2oJ4fdHOXhMFwzIr7-tzy4ZDRGSbEMPWhCRLRzZMkn_C601o6aAjleu8_7y9p5fF_wKNnGSGrbCzyT2-BBPVnIe71O7JSXug");'></div>
+<div class="relative h-full flex items-center justify-center text-center px-4">
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl md:text-5xl font-display font-bold tracking-tight">Let's Discuss Your Project</h1>
+<p class="text-white/90 text-lg font-body max-w-2xl mx-auto">We're here to help you bring your vision to life. Reach out for a free consultation or with any questions you may have.</p>
+</div>
+</div>
+</div>
+<!-- Main Content Section -->
+<div class="container mx-auto px-6 py-16 lg:py-24">
+<div class="grid lg:grid-cols-5 gap-12">
+<!-- Left Column: Form -->
+<div class="lg:col-span-3 bg-background-light dark:bg-background-dark p-8 md:p-10 rounded-xl shadow-soft">
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold font-display leading-tight tracking-tight mb-8">Send Us a Message</h2>
+<form class="space-y-6">
+<div class="grid sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-semibold font-display text-text-secondary-light dark:text-text-secondary-dark pb-2" for="full-name">Full Name</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-background-light dark:bg-gray-800/50 h-12 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-4 font-body" id="full-name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold font-display text-text-secondary-light dark:text-text-secondary-dark pb-2" for="phone">Phone Number</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-background-light dark:bg-gray-800/50 h-12 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-4 font-body" id="phone" placeholder="(123) 456-7890" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold font-display text-text-secondary-light dark:text-text-secondary-dark pb-2" for="email">Email Address</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-background-light dark:bg-gray-800/50 h-12 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-4 font-body" id="email" placeholder="you@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-semibold font-display text-text-secondary-light dark:text-text-secondary-dark pb-2" for="message">Message</label>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-background-light dark:bg-gray-800/50 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark p-4 font-body" id="message" placeholder="Tell us about your project..." rows="5"></textarea>
+</div>
+<div>
+<label class="flex items-center justify-center w-full h-12 px-4 gap-3 text-sm font-semibold text-primary border-2 border-dashed border-primary/50 rounded-lg cursor-pointer hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" for="file-upload">
+<span class="material-symbols-outlined">upload_file</span>
+<span>Attach Your Plan (Optional)</span>
+</label>
+<input class="sr-only" id="file-upload" name="file-upload" type="file"/>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold font-display leading-normal tracking-wide hover:opacity-90 transition-colors" type="submit">
+<span class="truncate">Send Message</span>
+</button>
+</form>
+</div>
+<!-- Right Column: Info -->
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl shadow-soft">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold font-display mb-6">Visit Us or Call</h3>
+<div class="space-y-6">
+<div>
+<iframe allowfullscreen="" class="w-full h-56 rounded-lg" data-location="San Francisco, CA, USA" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.132810050849!2d-122.4194156846813!3d37.77492957975962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c1a2f6b83%3A0x1e37ff48c9a3d4d!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1628706346453!5m2!1sen!2s" style="border:0;"></iframe>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h4 class="font-bold font-display text-text-light dark:text-text-dark">Showroom</h4>
+<p class="text-text-secondary-light dark:text-text-secondary-dark mt-1">123 Design Avenue, Suite 100<br/>Metropolis, CA 90210</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">contact_phone</span>
+<div>
+<h4 class="font-bold font-display text-text-light dark:text-text-dark">Contact</h4>
+<p class="text-text-secondary-light dark:text-text-secondary-dark mt-1">(123) 456-7890<br/>hello@modernwindows.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl shadow-soft">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold font-display mb-6">Business Hours</h3>
+<ul class="space-y-2 text-text-secondary-light dark:text-text-secondary-dark">
+<li class="flex justify-between"><span>Monday - Friday</span><span class="font-semibold text-text-light dark:text-text-dark">9:00 AM - 6:00 PM</span></li>
+<li class="flex justify-between"><span>Saturday</span><span class="font-semibold text-text-light dark:text-text-dark">10:00 AM - 4:00 PM</span></li>
+<li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-text-light dark:text-text-dark">Closed</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-6 right-6 flex items-center justify-center size-16 bg-[#25D366] text-white rounded-full shadow-lg hover:opacity-90 transition-all">
+<svg class="bi bi-whatsapp" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+</button>
+</div>
+</div>
+</body></html>

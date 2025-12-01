@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About ProFrame Windows</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2A64F5",
+              "background-light": "#FFFFFF",
+              "background-dark": "#101922",
+              "text-light": "#333333",
+              "text-dark": "#F5F5F5",
+              "card-light": "#F5F5F5",
+              "card-dark": "#1C2A38"
+            },
+            fontFamily: {
+              "display": ["Poppins", "sans-serif"],
+              "body": ["Open Sans", "sans-serif"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "full": "9999px",
+            },
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-6xl">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-6 py-4 md:px-10">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold font-display">ProFrame Windows</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="index.html">Products</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="services.html">Gallery</a>
+<a class="text-sm font-medium leading-normal text-primary font-semibold" href="about.html">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="contact.html">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Get a Free Quote</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-16 md:gap-24">
+<!-- HeroSection -->
+<div class="px-6 md:px-10 pt-10 md:pt-16">
+<div class="flex min-h-[400px] md:min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-4 text-center" data-alt="Exterior of a modern home with large, clean windows." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1EPq6fawmmgOgDCcpcVg4tv89KJJu3yXnuqvkvK-_TxvhGjAf4jojXYrAATAOqfn5lEQT3FJifp6kdCc8nHBCto98JN4lwmMtaVzgFW87nz903IsD1QE2bEYdT5WgIV3Z7Urec8eoYe5ebfafPjU6AWgqRzhesBAcwAUzse9WMKzR1r9VKhSV1Zpq40KRoVUR-30fQVIUgCYwDRIbx3k_PMZqSnjpP_r_dqtl8IMpqI_zrtXmz5YLTGqrUwjDrd7_4D3Q0Q30gw");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-white text-4xl font-bold leading-tight tracking-tight md:text-5xl font-display">Crafting Quality Windows &amp; Doors for Modern Homes</h1>
+<p class="text-white/90 text-base font-normal leading-normal md:text-lg">Learn more about our commitment to quality, durability, and style.</p>
+</div>
+</div>
+</div>
+<!-- FeatureSection: Our Story -->
+<div class="px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+<div class="w-full bg-center bg-no-repeat aspect-square md:aspect-[4/3] bg-cover rounded-xl" data-alt="Interior shot of a window manufacturing facility." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8EQoCoMxyL-lqVxH3Iilbh98AiYJs1-LBV4y1ZuJ5DXFMVdXG8WrwAR9TgqiphP6sPNTdZNOcPWyhw00wmyAPuZpr-wOLKQDReHhTQCeiC0fNLqcM4xLrILmNCYtjuS7OLtYUNUaWgyMFjdazuQriV4U1TzMcBOvwBmEbOQGRtWyZarDjUbpjM3Lc9TU2q-LYWQqflnHfwQjBGsFmeB-l3wfc_H1623wAOaDndgHu-b7ySMph5s4Mh_rc9TYGlhcF1BKUWqBvNA");'></div>
+<div class="flex flex-col gap-4">
+<h2 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl font-display">Our Story</h2>
+<p class="text-base font-normal leading-relaxed">Founded on the principles of quality craftsmanship and innovation, we have grown to become specialists in premium uPVC and aluminum windows and doors. Our journey is one of passion for improving homes, one installation at a time. We believe every home deserves the best in comfort, security, and design, which is why we pour our expertise into every product we create.</p>
+<button class="flex mt-4 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] w-fit hover:bg-primary/90 transition-colors">
+<span class="truncate">Explore Our Products</span>
+</button>
+</div>
+</div>
+<!-- SectionHeader & BodyText: Our Mission -->
+<div class="px-6 md:px-10 text-center flex flex-col items-center gap-4">
+<h2 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl font-display">Our Mission</h2>
+<p class="text-base font-normal leading-relaxed max-w-3xl text-gray-700 dark:text-gray-300">"To improve homes both aesthetically and functionally with premium, energy-efficient windows and doors, backed by expert installation and dedicated service."</p>
+</div>
+<!-- Why Choose Us Section -->
+<div class="px-6 md:px-10 py-10">
+<div class="flex flex-col gap-12 items-center">
+<div class="text-center">
+<h2 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl font-display">The Difference is in the Details</h2>
+<p class="mt-2 text-base font-normal leading-relaxed text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">Discover why homeowners and builders trust ProFrame for their projects.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 p-8 bg-card-light dark:bg-card-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-full flex items-center justify-center bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">construction</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold leading-normal font-display">Professional Installation</h3>
+<p class="mt-2 text-sm font-normal leading-relaxed">Our expert team ensures a seamless and precise fitting for lasting performance and peace of mind.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 p-8 bg-card-light dark:bg-card-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-full flex items-center justify-center bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">straighten</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold leading-normal font-display">Custom Solutions</h3>
+<p class="mt-2 text-sm font-normal leading-relaxed">We provide made-to-measure windows and doors tailored to fit the unique style and specifications of your home.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 p-8 bg-card-light dark:bg-card-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+<div class="w-12 h-12 rounded-full flex items-center justify-center bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold leading-normal font-display">Certified Quality</h3>
+<p class="mt-2 text-sm font-normal leading-relaxed">Our products are certified for durability, energy efficiency, and security, meeting the highest industry standards.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="bg-card-light dark:bg-card-dark mx-6 md:mx-10 rounded-xl p-10 md:p-16 mb-16 md:mb-24">
+<div class="text-center flex flex-col items-center gap-6">
+<h2 class="text-3xl font-bold tracking-tight md:text-4xl font-display">Ready to Transform Your Home?</h2>
+<p class="text-base leading-relaxed max-w-2xl text-gray-700 dark:text-gray-300">Let's discuss how our premium windows and doors can enhance your space. Contact us today for a no-obligation consultation.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Request a Consultation</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

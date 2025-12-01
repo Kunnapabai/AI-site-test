@@ -1,0 +1,25 @@
+# Image Customization Guide
+
+## For Your Personal Website
+
+The HTML files in this website use placeholder images from Unsplash. To customize with your own images:
+
+1. Add your own images to the "images" folder
+2. Replace the Unsplash URLs in the HTML files with local paths to your images
+
+Example:
+- Instead of: `url("https://source.unsplash.com/1600x900/?workspace,modern,desk")`
+- Use: `url("images/your-image.jpg")`
+
+## Recommended Image Sizes
+
+- Hero section images: 1600x900 pixels
+- Project thumbnails: 600x400 pixels
+- Profile/About images: 800x600 pixels
+
+## Sample Image File
+
+For demonstration purposes, you can add an actual image file with:
+- Name: profile.jpg
+- Location: images/profile.jpg
+- Size: 400x400 pixels
