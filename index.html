@@ -49,17 +49,41 @@
             </svg>
             <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">ProFrame Windows &amp; Doors</h2>
           </div>
-          <div class="hidden items-center gap-9 lg:flex">
-            <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="#">Home</a>
-            <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="about.html">Products</a>
-            <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="services.html">Gallery</a>
-            <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="contact.html">About Us</a>
-            <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="contact.html">Contact</a>
-          </div>
-          <div class="flex flex-1 justify-end">
-            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
-              <span class="truncate">Get Quote</span>
+          <div class="flex items-center gap-4">
+            <div id="mobile-menu" class="fixed inset-y-0 right-0 z-50 hidden w-64 transform-gpu bg-background-light/95 backdrop-blur dark:bg-background-dark/95 lg:hidden">
+              <div class="flex h-full w-full flex-col items-center justify-center gap-8 p-6">
+                <button id="close-mobile-menu" class="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-lg text-[#0d141c] hover:bg-slate-200 dark:text-slate-50 dark:hover:bg-slate-800">
+                  <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <a class="text-[#0d141c] text-lg font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="#">Home</a>
+                <a class="text-[#0d141c] text-lg font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="about.html">Products</a>
+                <a class="text-[#0d141c] text-lg font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="services.html">Gallery</a>
+                <a class="text-[#0d141c] text-lg font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="contact.html">About Us</a>
+                <a class="text-[#0d141c] text-lg font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="contact.html">Contact</a>
+                <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 mt-4" href="contact.html">
+                  <span class="truncate">Contact Us</span>
+                </a>
+              </div>
+            </div>
+            <button id="mobile-menu-toggle" class="flex h-10 w-10 items-center justify-center rounded-lg lg:hidden">
+              <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
             </button>
+            <div class="hidden items-center gap-9 lg:flex">
+              <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="#">Home</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="about.html">Products</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="services.html">Gallery</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="contact.html">About Us</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal hover:text-primary dark:text-slate-50 dark:hover:text-primary" href="contact.html">Contact</a>
+            </div>
+            <div class="items-center gap-2 hidden lg:flex">
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+                <span class="truncate">Contact Us</span>
+              </button>
+            </div>
           </div>
         </div>
       </header>

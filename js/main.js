@@ -36,6 +36,15 @@ function toggleMobileMenu() {
   }
 }
 
+// Function to close mobile menu
+function closeMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  if (menu) {
+    menu.classList.add('hidden');
+    menu.classList.remove('flex');
+  }
+}
+
 // Function to handle smooth scrolling for anchor links
 function initSmoothScrolling() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -104,6 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
   if (mobileMenuToggle) {
     mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Add event listener for mobile menu close button
+  const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+  if (closeMobileMenuBtn) {
+    closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
   }
 });
 
